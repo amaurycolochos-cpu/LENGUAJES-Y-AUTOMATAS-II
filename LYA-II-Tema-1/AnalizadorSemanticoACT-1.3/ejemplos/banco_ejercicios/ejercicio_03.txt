@@ -1,0 +1,7 @@
+// ejercicio 3: operación entre un entero y un decimal
+int cantidad = 4;
+float precio = 15.50f;
+float total;
+
+total = cantidad * precio;
+mostrar("Total: " + total);

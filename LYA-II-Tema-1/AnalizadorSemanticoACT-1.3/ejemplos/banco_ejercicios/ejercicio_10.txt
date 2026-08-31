@@ -1,0 +1,13 @@
+// ejercicio 10: caso integrador
+String producto = "Laptop";
+int cantidad = 2;
+float precio = 12500.50f;
+float subtotal;
+boolean disponible = true;
+
+subtotal = cantidad * precio;
+
+mostrar("Producto: " + producto);
+mostrar("Cantidad: " + cantidad);
+mostrar("Subtotal: " + subtotal);
+mostrar("Disponible: " + disponible);
