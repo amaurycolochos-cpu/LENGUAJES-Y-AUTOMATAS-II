@@ -1,0 +1,98 @@
+.root {
+    -fx-font-family: "Segoe UI", "Arial";
+    -fx-font-size: 14px;
+}
+
+.app { -fx-background-color: #f5f7f6; }
+
+.encabezado {
+    -fx-background-color: #ffffff;
+    -fx-border-color: transparent transparent #d9e0dc transparent;
+}
+
+.titulo {
+    -fx-font-size: 27px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #17201d;
+}
+
+.subtitulo, .texto-secundario, .ruta-archivo { -fx-text-fill: #68736e; }
+.ruta-archivo { -fx-font-size: 12px; }
+
+.barra-lateral {
+    -fx-background-color: #eef2f0;
+    -fx-border-color: transparent #d9e0dc transparent transparent;
+}
+
+.contenido { -fx-background-color: #f7f8f6; }
+
+.seccion-titulo {
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #29483d;
+}
+
+.combo-box, .button, .text-area, .table-view, .tab-pane {
+    -fx-background-radius: 7px;
+    -fx-border-radius: 7px;
+}
+
+.combo-box {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #c8d2cd;
+    -fx-padding: 4px;
+}
+
+.button {
+    -fx-cursor: hand;
+    -fx-padding: 10px 14px;
+    -fx-font-weight: bold;
+}
+
+.boton-principal { -fx-background-color: #29483d; -fx-text-fill: #ffffff; }
+.boton-principal:hover { -fx-background-color: #203a31; }
+
+.boton-secundario {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #29483d;
+    -fx-border-color: #aebdb6;
+}
+
+.boton-plano { -fx-background-color: transparent; -fx-text-fill: #68736e; }
+
+.nota {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 9px;
+    -fx-border-color: #d5ded9;
+    -fx-border-radius: 9px;
+    -fx-padding: 15px;
+    -fx-text-fill: #4d5954;
+}
+
+.nota-titulo { -fx-font-weight: bold; -fx-text-fill: #29483d; }
+.nota-separada { -fx-padding: 8px 0 0 0; }
+
+.editor-codigo {
+    -fx-font-family: "Cascadia Mono", "Consolas";
+    -fx-font-size: 15px;
+}
+
+.editor-codigo .content, .resultado-area .content { -fx-background-color: #ffffff; }
+.resultado-area { -fx-font-family: "Cascadia Mono", "Consolas"; }
+.errores-area { -fx-text-fill: #8d3632; }
+
+.table-view { -fx-background-color: #ffffff; -fx-border-color: #d2dbd6; }
+.table-view .column-header-background { -fx-background-color: #e5ece8; }
+.table-view .column-header, .table-view .filler { -fx-background-color: transparent; }
+.tab-pane .tab-header-area .tab-header-background { -fx-background-color: #e9eeeb; }
+.tab-pane .tab:selected { -fx-background-color: #ffffff; }
+
+.estado-neutral, .estado-correcto, .estado-error {
+    -fx-padding: 8px 14px;
+    -fx-background-radius: 18px;
+    -fx-font-weight: bold;
+}
+
+.estado-neutral { -fx-background-color: #e8ecea; -fx-text-fill: #53605a; }
+.estado-correcto { -fx-background-color: #dce9e2; -fx-text-fill: #24523d; }
+.estado-error { -fx-background-color: #f2dfdd; -fx-text-fill: #923b36; }
