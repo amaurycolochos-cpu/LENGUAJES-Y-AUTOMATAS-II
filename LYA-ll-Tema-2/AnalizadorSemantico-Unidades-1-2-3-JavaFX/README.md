@@ -65,9 +65,3 @@ Todos aparecen también en el selector lateral de la interfaz.
 ## Validar los ejercicios sin abrir JavaFX
 
 Después de compilar el proyecto se puede ejecutar `ValidadorUnidades23`, que recorre los 30 archivos de Unidades 2 y 3 y comprueba que no tengan errores semánticos y que produzcan código intermedio.
-
-## Alcance del minilenguaje
-
-Esta versión conserva el alcance del analizador base: declaraciones, asignaciones, expresiones y `mostrar(...)`. Los temas de control, funciones definidas por el usuario y estructuras/arreglos aparecen en el temario general de la Unidad 2, pero no se añadieron al lenguaje fuente de esta práctica porque el proyecto de Unidad 1 no los implementaba y el banco preparado se centra en las representaciones de expresiones y asignaciones.
-
-Consulta `GUIA_UNIDADES_2_Y_3.md` para saber exactamente qué prueba ejecutar y qué capturas tomar para cada reporte.
