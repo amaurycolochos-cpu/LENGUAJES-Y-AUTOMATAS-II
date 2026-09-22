@@ -1,0 +1,9 @@
+// U2 - Ejercicio 10: integrador
+int a = 12;
+int b = 4;
+int c = 3;
+float x = (a + b) / c;
+int y = a - b * c + 6;
+x = x + 2;
+mostrar(x);
+mostrar(y);

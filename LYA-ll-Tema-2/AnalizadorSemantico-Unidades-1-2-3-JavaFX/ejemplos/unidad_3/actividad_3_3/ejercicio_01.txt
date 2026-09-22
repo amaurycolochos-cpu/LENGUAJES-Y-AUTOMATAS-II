@@ -1,0 +1,2 @@
+// U3 - Ejercicio 1: optimización local
+int r = 10 + 20 / 2;

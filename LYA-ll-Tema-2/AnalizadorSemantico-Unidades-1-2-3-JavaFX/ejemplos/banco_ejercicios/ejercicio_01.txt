@@ -1,0 +1,8 @@
+// ejercicio 1: generación de la tabla de símbolos
+int edad = 20;
+float promedio = 9.5f;
+String nombre = "Amaury";
+boolean activo = true;
+
+mostrar(nombre);
+mostrar(promedio);

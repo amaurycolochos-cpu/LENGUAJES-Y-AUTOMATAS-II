@@ -1,0 +1,5 @@
+// Actividad 2.2 - Prueba 1: operación simple
+int a = 5;
+int b = 3;
+int x = a + b;
+mostrar(x);

@@ -1,0 +1,4 @@
+// Actividad 3.2 - Prueba 4: reducción de fuerza
+int a = 7;
+int x = a * 2;
+mostrar(x);

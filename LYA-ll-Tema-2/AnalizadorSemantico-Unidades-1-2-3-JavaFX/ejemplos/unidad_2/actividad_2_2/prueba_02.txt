@@ -1,0 +1,6 @@
+// Actividad 2.2 - Prueba 2: precedencia de operadores
+int a = 2;
+int b = 3;
+int c = 4;
+int x = a + b * c;
+mostrar(x);

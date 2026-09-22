@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Priority?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17.0.16"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="mx.edu.tecnm.semantico.AnalizadorController"
+            prefWidth="1280.0" prefHeight="760.0" styleClass="app">
+    <top>
+        <VBox spacing="6.0" styleClass="encabezado">
+            <padding>
+                <Insets top="22.0" right="28.0" bottom="20.0" left="28.0"/>
+            </padding>
+            <HBox alignment="CENTER_LEFT" spacing="14.0">
+                <VBox spacing="3.0">
+                    <Label text="Analizador semántico" styleClass="titulo"/>
+                    <Label text="Unidades 1, 2 y 3 · análisis, código intermedio y optimización" styleClass="subtitulo"/>
+                </VBox>
+                <Region HBox.hgrow="ALWAYS"/>
+                <Label fx:id="estadoLabel" text="Listo para analizar"
+                       styleClass="estado-neutral"/>
+            </HBox>
+        </VBox>
+    </top>
+
+    <left>
+        <VBox prefWidth="310.0" spacing="14.0" styleClass="barra-lateral">
+            <padding>
+                <Insets top="24.0" right="20.0" bottom="24.0" left="24.0"/>
+            </padding>
+            <Label text="Pruebas disponibles" styleClass="seccion-titulo"/>
+            <Label text="Selecciona una prueba de la práctica o un ejercicio del banco."
+                   wrapText="true" styleClass="texto-secundario"/>
+            <ComboBox fx:id="selectorCaso" maxWidth="Infinity" promptText="Seleccionar prueba"/>
+            <Button text="Analizar código" maxWidth="Infinity"
+                    onAction="#analizarCodigo" styleClass="boton-principal"/>
+            <Button text="Abrir otro archivo" maxWidth="Infinity"
+                    onAction="#abrirArchivo" styleClass="boton-secundario"/>
+            <Button text="Limpiar" maxWidth="Infinity"
+                    onAction="#limpiarTodo" styleClass="boton-plano"/>
+            <Region VBox.vgrow="ALWAYS"/>
+        </VBox>
+    </left>
+
+    <center>
+        <VBox spacing="12.0" styleClass="contenido">
+            <padding>
+                <Insets top="22.0" right="28.0" bottom="24.0" left="24.0"/>
+            </padding>
+            <HBox alignment="CENTER_LEFT">
+                <Label text="Código fuente" styleClass="seccion-titulo"/>
+                <Region HBox.hgrow="ALWAYS"/>
+                <Label fx:id="archivoLabel" text="Sin archivo seleccionado"
+                       styleClass="ruta-archivo"/>
+            </HBox>
+            <SplitPane orientation="VERTICAL" dividerPositions="0.46" VBox.vgrow="ALWAYS">
+                <items>
+                    <TextArea fx:id="codigoArea" wrapText="false" styleClass="editor-codigo"/>
+                    <TabPane tabClosingPolicy="UNAVAILABLE">
+                        <tabs>
+                            <Tab text="Tabla de símbolos">
+                                <TableView fx:id="tablaSimbolos">
+                                    <columns>
+                                        <TableColumn fx:id="nombreColumn" text="Nombre" prefWidth="170.0"/>
+                                        <TableColumn fx:id="tipoColumn" text="Tipo" prefWidth="120.0"/>
+                                        <TableColumn fx:id="ambitoColumn" text="Ámbito" prefWidth="130.0"/>
+                                        <TableColumn fx:id="direccionColumn" text="Dirección" prefWidth="130.0"/>
+                                        <TableColumn fx:id="valorColumn" text="Valor" prefWidth="220.0"/>
+                                    </columns>
+                                </TableView>
+                            </Tab>
+                            <Tab text="Salidas">
+                                <TextArea fx:id="salidasArea" editable="false" wrapText="true"
+                                          styleClass="resultado-area"/>
+                            </Tab>
+                            <Tab text="U2 · Notaciones">
+                                <TextArea fx:id="notacionesArea" editable="false" wrapText="false"
+                                          styleClass="resultado-area"/>
+                            </Tab>
+                            <Tab text="U2 · Tres direcciones">
+                                <TextArea fx:id="codigoIntermedioArea" editable="false" wrapText="false"
+                                          styleClass="resultado-area"/>
+                            </Tab>
+                            <Tab text="U2 · Cuádruplos">
+                                <TextArea fx:id="cuadruplosArea" editable="false" wrapText="false"
+                                          styleClass="resultado-area"/>
+                            </Tab>
+                            <Tab text="U2 · Triplos">
+                                <TextArea fx:id="triplosArea" editable="false" wrapText="false"
+                                          styleClass="resultado-area"/>
+                            </Tab>
+                            <Tab text="U2 · Código P">
+                                <TextArea fx:id="pCodeArea" editable="false" wrapText="false"
+                                          styleClass="resultado-area"/>
+                            </Tab>
+                            <Tab text="U3 · Optimización">
+                                <TextArea fx:id="optimizacionArea" editable="false" wrapText="false"
+                                          styleClass="resultado-area"/>
+                            </Tab>
+                            <Tab text="Errores semánticos">
+                                <TextArea fx:id="erroresArea" editable="false" wrapText="true"
+                                          styleClass="resultado-area errores-area"/>
+                            </Tab>
+                        </tabs>
+                    </TabPane>
+                </items>
+            </SplitPane>
+        </VBox>
+    </center>
+</BorderPane>

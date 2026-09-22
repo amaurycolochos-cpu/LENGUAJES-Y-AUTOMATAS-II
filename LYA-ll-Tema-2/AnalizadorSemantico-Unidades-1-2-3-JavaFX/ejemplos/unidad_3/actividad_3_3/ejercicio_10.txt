@@ -1,0 +1,8 @@
+// U3 - Ejercicio 10: integrador
+int a = 5;
+int b = 10;
+int c = a + 0;
+int d = b * 2;
+int e = 3 + 4 * 2;
+int f = c + d + e;
+mostrar(f);

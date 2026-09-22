@@ -1,0 +1,7 @@
+// ejercicio 8: división entre cero
+int dividendo = 100;
+int divisor = 0;
+int resultado;
+
+resultado = dividendo / divisor;
+mostrar(resultado);

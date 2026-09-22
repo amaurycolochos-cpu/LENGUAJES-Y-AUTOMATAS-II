@@ -1,0 +1,5 @@
+// U2 - Ejercicio 9: signo negativo
+int a = 8;
+int b = 3;
+int r = -a + b * 2;
+mostrar(r);

@@ -1,0 +1,10 @@
+// Este programa debe terminar sin errores.
+int cantidad = 5;
+float precio = 20.50f;
+float total;
+String producto = "Cuaderno";
+boolean disponible = true;
+
+total = cantidad * precio;
+mostrar("Producto: " + producto);
+mostrar("Total: " + total);

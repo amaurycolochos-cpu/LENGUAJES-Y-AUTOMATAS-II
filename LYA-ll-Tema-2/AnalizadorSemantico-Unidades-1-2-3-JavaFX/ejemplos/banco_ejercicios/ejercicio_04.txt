@@ -1,0 +1,8 @@
+// ejercicio 4: concatenación de cadenas con diferentes tipos
+String producto = "Teclado";
+float precio = 450.50f;
+boolean disponible = true;
+
+mostrar("Producto: " + producto);
+mostrar("Precio: " + precio);
+mostrar("Disponible: " + disponible);
