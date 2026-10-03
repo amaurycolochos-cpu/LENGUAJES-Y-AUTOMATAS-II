@@ -2,6 +2,13 @@
 
 Material del **Tema 4** de la materia Lenguajes y Autómatas II, correspondiente a las prácticas de análisis semántico, generación de código intermedio, optimización y generación de código objeto.
 
+## Actividades
+
+| Actividad | Entregable |
+| --- | --- |
+| 4.1 | [Mapa conceptual](Actividad%204.1%20Mapa%20Conceptual_AmauryGordillo_LYA-II_7ISCM.docx) |
+| 4.2 | [Proyecto analizador semántico](Actividad%204.2%20Proyecto%20Analizador%20Semantico_AmauryGordillo_LYA-II_7ISCM.pptx) |
+
 ## Proyecto
 
 | Carpeta | Descripción |
