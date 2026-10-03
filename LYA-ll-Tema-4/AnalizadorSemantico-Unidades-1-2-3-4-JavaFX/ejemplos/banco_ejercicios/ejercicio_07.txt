@@ -1,0 +1,5 @@
+// ejercicio 7: asignación de un texto a una variable entera
+int edad = 20;
+
+edad = "veinte";
+mostrar(edad);

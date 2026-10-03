@@ -1,0 +1,5 @@
+// U2 - Ejercicio 4: triplos
+int a = 7;
+int b = 5;
+int c = 2;
+int r = a * b - c;

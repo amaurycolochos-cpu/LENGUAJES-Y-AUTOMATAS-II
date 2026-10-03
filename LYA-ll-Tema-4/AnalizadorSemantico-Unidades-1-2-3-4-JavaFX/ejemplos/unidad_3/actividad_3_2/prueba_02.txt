@@ -1,0 +1,5 @@
+// Actividad 3.2 - Prueba 2: simplificación algebraica
+int a = 9;
+int x = a + 0;
+int y = x * 1;
+mostrar(y);

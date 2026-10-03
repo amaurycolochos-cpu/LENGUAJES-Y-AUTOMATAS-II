@@ -1,0 +1,7 @@
+// ejercicio 2: prioridad de los operadores aritméticos
+int a = 10;
+int b = 5;
+int resultado;
+
+resultado = a + b * 2;
+mostrar("Resultado: " + resultado);

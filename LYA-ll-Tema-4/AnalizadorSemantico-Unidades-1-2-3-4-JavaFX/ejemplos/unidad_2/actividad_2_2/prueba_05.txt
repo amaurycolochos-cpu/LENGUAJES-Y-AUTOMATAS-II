@@ -1,0 +1,8 @@
+// Actividad 2.2 - Prueba 5: caso integrador
+int a = 8;
+int b = 3;
+int c = 2;
+float promedio = (a + b * 2) / c;
+int ajuste = a - b + c * 4;
+mostrar(promedio);
+mostrar(ajuste);

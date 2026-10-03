@@ -1,0 +1,5 @@
+// U3 - Ejercicio 5: subexpresiones comunes
+int a = 2;
+int b = 5;
+int x = a + b;
+int y = a + b;

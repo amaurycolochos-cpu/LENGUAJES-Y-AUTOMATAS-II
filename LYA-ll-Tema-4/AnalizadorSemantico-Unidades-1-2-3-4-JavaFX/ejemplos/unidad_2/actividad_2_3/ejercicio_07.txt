@@ -1,0 +1,7 @@
+// U2 - Ejercicio 7: asignaciones consecutivas
+int a = 2;
+int b = 4;
+int x = a + b;
+x = x * 3;
+int y = x - a;
+mostrar(y);

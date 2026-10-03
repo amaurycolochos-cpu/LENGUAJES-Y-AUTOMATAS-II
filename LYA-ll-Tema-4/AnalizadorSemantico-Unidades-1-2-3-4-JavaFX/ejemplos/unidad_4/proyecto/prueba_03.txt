@@ -1,0 +1,7 @@
+// Unidad 4 - Prueba 3: el código objeto se genera después de optimizar
+int a = 8;
+int x = a + 0;
+int y = x * 2;
+int z = 2 + 3 * 4;
+int resultado = y + z;
+mostrar(resultado);

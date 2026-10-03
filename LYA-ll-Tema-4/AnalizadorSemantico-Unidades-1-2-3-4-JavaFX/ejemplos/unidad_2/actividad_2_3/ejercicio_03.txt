@@ -1,0 +1,4 @@
+// U2 - Ejercicio 3: Código P
+int x = 10;
+int y = 2;
+int z = x / y + 7;

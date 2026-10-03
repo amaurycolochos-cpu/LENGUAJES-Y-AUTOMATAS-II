@@ -1,0 +1,7 @@
+// Unidad 4 - Prueba 4: caso integrador del compilador
+int cantidad = 6;
+float precio = 18.5f;
+float subtotal = cantidad * precio;
+float ajuste = subtotal + 2.5f;
+float total = ajuste / 2;
+mostrar(total);

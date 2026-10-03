@@ -1,0 +1,5 @@
+// ejercicio 5: declaración duplicada
+int cantidad = 5;
+int cantidad = 10;
+
+mostrar(cantidad);

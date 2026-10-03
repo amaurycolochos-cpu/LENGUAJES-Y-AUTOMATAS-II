@@ -1,0 +1,5 @@
+// ejercicio 6: uso de una variable no declarada
+int cantidad = 5;
+
+total = cantidad * 20;
+mostrar(total);

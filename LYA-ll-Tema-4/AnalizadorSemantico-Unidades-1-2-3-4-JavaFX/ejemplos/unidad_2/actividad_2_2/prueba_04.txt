@@ -1,0 +1,6 @@
+// Actividad 2.2 - Prueba 4: asociatividad de izquierda a derecha
+int a = 20;
+int b = 5;
+int c = 3;
+int x = a - b - c;
+mostrar(x);

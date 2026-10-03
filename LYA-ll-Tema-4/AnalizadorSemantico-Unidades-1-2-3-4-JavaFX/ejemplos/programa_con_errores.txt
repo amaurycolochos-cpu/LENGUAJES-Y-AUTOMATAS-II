@@ -1,0 +1,9 @@
+// Este archivo sirve para comprobar los mensajes del analizador.
+int edad = 20;
+String nombre = "Amaury";
+int edad = 25;
+edad = "veinte";
+promedio = 9;
+boolean activo = 4;
+int division = 10 / 0;
+mostrar(variableInexistente);

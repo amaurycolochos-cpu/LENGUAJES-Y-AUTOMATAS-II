@@ -1,0 +1,4 @@
+// U3 - Ejercicio 3: propagación de constantes
+int a = 3;
+int b = a;
+int c = b + 4;

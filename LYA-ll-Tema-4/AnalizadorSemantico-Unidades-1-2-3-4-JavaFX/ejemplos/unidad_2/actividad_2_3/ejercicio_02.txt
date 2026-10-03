@@ -1,0 +1,5 @@
+// U2 - Ejercicio 2: notación polaca y prioridad por paréntesis
+int a = 4;
+int b = 6;
+int c = 2;
+int r = (a + b) * c;

@@ -1,0 +1,5 @@
+// U3 - Ejercicio 2: identidades algebraicas
+int a = 11;
+int r1 = a + 0;
+int r2 = r1 - 0;
+int r3 = r2 * 1;

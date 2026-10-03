@@ -1,0 +1,4 @@
+// U3 - Ejercicio 9: mirilla
+int a = 5;
+a = a + 0;
+int b = a * 1;

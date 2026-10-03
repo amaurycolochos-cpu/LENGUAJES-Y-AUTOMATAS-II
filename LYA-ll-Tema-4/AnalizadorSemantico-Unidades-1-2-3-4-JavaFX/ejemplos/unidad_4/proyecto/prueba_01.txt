@@ -1,0 +1,5 @@
+// Unidad 4 - Prueba 1: registros y memoria
+int a = 5;
+int b = 3;
+int resultado = a + b;
+mostrar(resultado);

@@ -1,0 +1,8 @@
+// Unidad 4 - Prueba 2: traducción aritmética
+int a = 12;
+int b = 4;
+int suma = a + b;
+int resta = a - b;
+int producto = a * b;
+int cociente = a / b;
+mostrar(producto);

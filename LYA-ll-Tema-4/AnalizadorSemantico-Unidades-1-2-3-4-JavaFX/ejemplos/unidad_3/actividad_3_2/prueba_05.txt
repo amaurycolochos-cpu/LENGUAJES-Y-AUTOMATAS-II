@@ -1,0 +1,8 @@
+// Actividad 3.2 - Prueba 5: caso integrador
+int a = 6;
+int b = 4;
+int x = a + 0;
+int y = b * 2;
+int z = 2 + 3 * 4;
+int r = x + y + z;
+mostrar(r);

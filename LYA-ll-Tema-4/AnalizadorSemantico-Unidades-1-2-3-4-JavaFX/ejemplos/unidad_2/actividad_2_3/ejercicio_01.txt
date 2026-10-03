@@ -1,0 +1,5 @@
+// U2 - Ejercicio 1: comparar infija, prefija y postfija
+int a = 4;
+int b = 6;
+int c = 2;
+int r = a + b * c;

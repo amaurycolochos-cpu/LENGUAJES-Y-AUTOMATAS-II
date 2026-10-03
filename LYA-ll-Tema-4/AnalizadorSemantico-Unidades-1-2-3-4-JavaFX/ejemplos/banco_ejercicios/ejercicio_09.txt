@@ -1,0 +1,8 @@
+// ejercicio 9: varios errores en un mismo archivo
+int numero = 10;
+int numero = 20;
+numero = "diez";
+promedio = 9;
+boolean activo = 4;
+int division = 10 / 0;
+mostrar(variableInexistente);
