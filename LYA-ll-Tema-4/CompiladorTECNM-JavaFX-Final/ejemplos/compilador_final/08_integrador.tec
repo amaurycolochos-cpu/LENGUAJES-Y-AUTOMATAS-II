@@ -1,0 +1,24 @@
+publico clase Tienda inicio
+
+    publico estatico vacio principal(cadena[] argumentos) inicio
+
+        entero cantidad = 6;
+        decimal precio = 18.5;
+        decimal subtotal = cantidad * precio;
+        decimal ajuste = subtotal + 2.5;
+        decimal total = ajuste / 2;
+        booleano disponible = verdadero;
+
+        imprimir("Subtotal: " + subtotal);
+
+        si (disponible && total > 50) inicio
+            imprimir("Compra disponible");
+            imprimir("Total: " + total);
+        fin
+        sino inicio
+            imprimir("Compra no disponible");
+        fin
+
+    fin
+
+fin

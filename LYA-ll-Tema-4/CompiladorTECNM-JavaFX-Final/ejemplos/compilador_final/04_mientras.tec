@@ -1,0 +1,14 @@
+publico clase Contador inicio
+
+    publico estatico vacio principal(cadena[] argumentos) inicio
+
+        entero contador = 1;
+
+        mientras (contador <= 5) inicio
+            imprimir("Vuelta " + contador);
+            contador = contador + 1;
+        fin
+
+    fin
+
+fin

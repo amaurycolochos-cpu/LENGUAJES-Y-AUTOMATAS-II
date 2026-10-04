@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Priority?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17.0.16"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="mx.edu.tecnm.semantico.CompiladorController"
+            prefWidth="1380.0" prefHeight="820.0" styleClass="app">
+    <top>
+        <VBox styleClass="top-area">
+            <HBox alignment="CENTER_LEFT" spacing="16" styleClass="encabezado">
+                <padding><Insets top="15" right="22" bottom="13" left="22"/></padding>
+                <VBox spacing="1">
+                    <Label text="Compilador TECNM - Amaury Gordillo" styleClass="titulo"/>
+                    <Label text="Editor y compilador de lenguaje propio" styleClass="subtitulo"/>
+                </VBox>
+                <Region HBox.hgrow="ALWAYS"/>
+                <Label fx:id="estadoLabel" text="Listo" styleClass="estado-neutral"/>
+            </HBox>
+
+            <HBox spacing="8" alignment="CENTER_LEFT" styleClass="toolbar">
+                <padding><Insets top="7" right="18" bottom="7" left="18"/></padding>
+                <Button text="Nuevo" onAction="#nuevoArchivo" styleClass="boton-toolbar"/>
+                <Button text="Abrir" onAction="#abrirArchivo" styleClass="boton-toolbar"/>
+                <Button text="Guardar" onAction="#guardarArchivo" styleClass="boton-toolbar"/>
+                <Region prefWidth="8"/>
+                <Button text="Compilar" onAction="#compilarCodigo" styleClass="boton-compilar"/>
+                <Button fx:id="ejecutarButton" text="▶ Ejecutar" onAction="#ejecutarCodigo" styleClass="boton-ejecutar" disable="true"/>
+                <Region prefWidth="8"/>
+                <Button text="Ver análisis" onAction="#verAnalisis" styleClass="boton-toolbar"/>
+                <Button text="Limpiar salida" onAction="#limpiarSoloSalida" styleClass="boton-toolbar"/>
+                <Region HBox.hgrow="ALWAYS"/>
+                <Label fx:id="archivoLabel" text="MiPrograma.tec" styleClass="ruta-archivo"/>
+            </HBox>
+        </VBox>
+    </top>
+
+    <center>
+        <VBox spacing="7" styleClass="contenido">
+            <padding><Insets top="12" right="16" bottom="10" left="16"/></padding>
+
+            <HBox alignment="CENTER_LEFT" spacing="8">
+                <Label text="Editor" styleClass="seccion-titulo"/>
+                <Label text=".tec" styleClass="lenguaje-badge"/>
+            </HBox>
+
+            <SplitPane orientation="VERTICAL" dividerPositions="0.64" VBox.vgrow="ALWAYS" styleClass="main-split">
+                <items>
+                    <HBox styleClass="editor-wrapper">
+                        <TextArea fx:id="lineasArea"
+                                  editable="false"
+                                  focusTraversable="false"
+                                  mouseTransparent="true"
+                                  wrapText="false"
+                                  styleClass="editor-lineas"
+                                  prefWidth="62" minWidth="54" maxWidth="72"/>
+                        <TextArea fx:id="codigoArea"
+                                  wrapText="false"
+                                  styleClass="editor-codigo"
+                                  HBox.hgrow="ALWAYS"/>
+                    </HBox>
+
+                    <VBox spacing="0" styleClass="build-panel">
+                        <HBox alignment="CENTER_LEFT" spacing="8" styleClass="build-header">
+                            <padding><Insets top="7" right="10" bottom="7" left="10"/></padding>
+                            <Label text="Build Output" styleClass="build-title"/>
+                            <Region HBox.hgrow="ALWAYS"/>
+                            <Label fx:id="buildStatusLabel" text="Sin compilar" styleClass="build-status"/>
+                        </HBox>
+                        <TextArea fx:id="salidaArea"
+                                  editable="false"
+                                  wrapText="false"
+                                  styleClass="resultado-area"
+                                  VBox.vgrow="ALWAYS"/>
+                    </VBox>
+                </items>
+            </SplitPane>
+
+            <HBox alignment="CENTER_LEFT" spacing="12" styleClass="statusbar">
+                <Label fx:id="posicionLabel" text="Línea 1, columna 1" styleClass="statusbar-label"/>
+                <Region HBox.hgrow="ALWAYS"/>
+                <Label text="UTF-8" styleClass="statusbar-label"/>
+                <Label text="Java 17" styleClass="statusbar-label"/>
+                <Label text="JavaFX" styleClass="statusbar-label"/>
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>

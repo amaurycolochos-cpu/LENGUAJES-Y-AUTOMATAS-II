@@ -1,0 +1,9 @@
+publico clase ErrorSintactico inicio
+
+    publico estatico vacio principal(cadena[] argumentos) inicio
+
+        imprimi("Hola Mundo");
+
+    fin
+
+fin

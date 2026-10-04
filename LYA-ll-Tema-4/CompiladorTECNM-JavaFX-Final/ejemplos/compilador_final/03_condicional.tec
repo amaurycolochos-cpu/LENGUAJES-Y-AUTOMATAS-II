@@ -1,0 +1,16 @@
+publico clase MayorEdad inicio
+
+    publico estatico vacio principal(cadena[] argumentos) inicio
+
+        entero edad = 20;
+
+        si (edad >= 18) inicio
+            imprimir("Es mayor de edad");
+        fin
+        sino inicio
+            imprimir("Es menor de edad");
+        fin
+
+    fin
+
+fin

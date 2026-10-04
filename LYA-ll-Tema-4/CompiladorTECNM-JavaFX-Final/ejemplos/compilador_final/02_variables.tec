@@ -1,0 +1,17 @@
+publico clase Operaciones inicio
+
+    publico estatico vacio principal(cadena[] argumentos) inicio
+
+        entero a = 12;
+        entero b = 4;
+        entero suma = a + b;
+        entero producto = a * b;
+        decimal promedio = suma / 2.0;
+
+        imprimir("Suma: " + suma);
+        imprimir("Producto: " + producto);
+        imprimir("Promedio: " + promedio);
+
+    fin
+
+fin

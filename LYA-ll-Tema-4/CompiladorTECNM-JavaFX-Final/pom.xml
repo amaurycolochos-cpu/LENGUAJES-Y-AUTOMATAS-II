@@ -6,8 +6,8 @@
 
     <groupId>mx.edu.tecnm</groupId>
     <artifactId>analizador-semantico-javafx</artifactId>
-    <version>3.0.0</version>
-    <name>Analizador semántico - Unidades 1, 2, 3 y 4</name>
+    <version>4.0.0</version>
+    <name>Compilador TECNM - Lenguaje propio en español</name>
 
     <properties>
         <maven.compiler.release>17</maven.compiler.release>
@@ -43,7 +43,7 @@
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.8</version>
                 <configuration>
-                    <mainClass>mx.edu.tecnm.semantico.AplicacionAnalizador</mainClass>
+                    <mainClass>mx.edu.tecnm.semantico.AplicacionCompilador</mainClass>
                 </configuration>
             </plugin>
         </plugins>

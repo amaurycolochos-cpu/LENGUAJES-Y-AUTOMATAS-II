@@ -13,13 +13,13 @@ Material del **Tema 4** de la materia Lenguajes y Autómatas II, correspondiente
 
 | Carpeta | Descripción |
 | --- | --- |
-| [`AnalizadorSemantico-Unidades-1-2-3-4-JavaFX`](AnalizadorSemantico-Unidades-1-2-3-4-JavaFX) | Proyecto JavaFX con el analizador semántico de las unidades 1, 2 y 3, ampliado con la generación de código objeto de la Unidad 4. |
+| [`CompiladorTECNM-JavaFX-Final`](CompiladorTECNM-JavaFX-Final) | Compilador JavaFX de un lenguaje propio en español: análisis léxico, sintáctico y semántico, traducción a Java, compilación real con `javac` y ejecución desde la misma interfaz. |
 
-## Ejecutar el analizador
+## Ejecutar el compilador
 
 ```bash
-cd AnalizadorSemantico-Unidades-1-2-3-4-JavaFX
+cd CompiladorTECNM-JavaFX-Final
 mvn clean javafx:run
 ```
 
-Requiere JDK 17 y Maven 3.8 o posterior. Los detalles del proyecto, los ejemplos de prueba y la guía de las unidades están en el [README del analizador](AnalizadorSemantico-Unidades-1-2-3-4-JavaFX/README.md).
+Requiere JDK 17 completo (incluye `javac`) y Maven 3.8 o posterior. Los detalles del proyecto, los ejemplos de prueba y la guía de las unidades están en el [README del compilador](CompiladorTECNM-JavaFX-Final/README.md).

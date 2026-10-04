@@ -1,0 +1,10 @@
+publico clase ErrorSemantico inicio
+
+    publico estatico vacio principal(cadena[] argumentos) inicio
+
+        entero edad = "veinte";
+        imprimir(edad);
+
+    fin
+
+fin

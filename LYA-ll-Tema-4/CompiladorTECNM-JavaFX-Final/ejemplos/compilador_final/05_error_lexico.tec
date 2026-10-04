@@ -1,0 +1,10 @@
+publico clase ErrorLexico inicio
+
+    publico estatico vacio principal(cadena[] argumentos) inicio
+
+        entero edad = 20@;
+        imprimir(edad);
+
+    fin
+
+fin
